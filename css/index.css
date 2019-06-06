@@ -180,7 +180,7 @@ img {
 }
 header {
   display: flex;
-  flex-flow: row;
+  flex-flow: row-reverse;
   justify-content: flex-end;
   justify-content: space-between;
   max-width: 799px;
