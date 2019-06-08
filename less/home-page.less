@@ -1,11 +1,35 @@
-.home {
+header {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+  width: 50%;
+  margin: 30px auto;
+}
 
+nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  justify-content: space-between;
+ }
+ .bus-img img {
+   border-radius: 9px;
+ }
+ h1 {
+   display: flex;
+   justify-content: flex-start;
+ }
+
+.home {
+  img {
+    width: 800px;
+    justify-content: center;
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
    
     
     .text-content {
@@ -59,3 +83,91 @@
     }
   }
 }// home
+//@media query
+@media @mobile {
+  header {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: @justify-center;
+    align-items: @align-center;
+    width: @width-percent-100;
+  }
+   nav {
+     width: 80%;
+   }
+  nav a {
+    margin-bottom: -16px;
+justify-content: space-evenly;
+ }
+
+  
+  .home {
+    padding: 0;
+    .bus-img {
+      margin: 0;
+      border-top: 1px dashed #555;
+      padding: 0 14px;
+    }
+   
+   .bus-img img {
+      width: @width-percent-100;
+      height: 160px;
+    }
+  .content-section {
+    display: @display-flex; 
+    flex-direction: @justify-column;
+    justify-content: @justify-center;
+     align-items: @align-center;
+    width: @width-percent-100;
+    
+    .text-content {
+      width: @width-percent-100;
+      padding: @left-right;
+      h2 {
+        padding-top: 14px !important;
+      }
+      h2 {
+        font-weight: @bolder;
+      }
+    }
+    .img-content {
+      padding: @left-right;
+      /* border: 1px solid #000; */
+      width: @width-percent-100;
+    img {
+      width: 451px;
+      height: auto;
+    }
+   }
+    img {
+      width: @width-percent-100;
+    }
+  }
+
+.content-destination {
+  width: @width-percent-100;
+  padding: @left-right;
+  h2 {
+    font-weight: bolder;
+  }
+}
+
+
+  .content-pick {
+      display: @display-flex;
+      flex-direction: @justify-column;
+      justify-content: @justify-center;
+      align-items: @align-center;
+      .destination {
+        width: @width-percent-100;
+        padding: 0 47px;
+        h4 {
+          font-weight: @bolder;
+        }
+        .btn {
+          width: @width-percent-100;
+        }
+      }
+    }
+  }
+} // end of home
