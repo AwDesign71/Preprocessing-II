@@ -1,1 +1,26 @@
 // Mixins in here
+.border-radius() {
+    border-radius: 11px;
+}
+.bg-color() {
+    background: @eastern-blue;
+}
+.spacing() {
+    padding: 14px 49px;
+}
+.font-style() {
+    font-size: 1.6rem;
+    font-weight: 800px;
+    color: #ffffff;
+    text-align: center;
+}
+.size() {
+    width: 199px;
+}
+.btn {
+    .border-radius();
+    .bg-color();
+    .spacing();
+    .font-style();
+    .size()
+}
